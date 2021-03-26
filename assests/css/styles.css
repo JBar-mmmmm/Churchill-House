@@ -1,11 +1,91 @@
+/* @import on first like (without style tags) */
+
 body {
     background-color: #ffffff;
     color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+}
+/* https://www.fontpair.co/all */
+/* Google fonts */
+h1, 
+h2, 
+h3,
+h4,
+h5, 
+h6 {
+    font-family: serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+h1 {
+    padding: 30px;
+}
+h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+a {
+    color: goldenrod;
+    background-color: indigo;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: goldenrod;
+}
+a:active {
+    color: greenyellow;
+}
+.wrapper {
+    width: 980px;
+    margin: 100px auto;
 }
 header {
     background-color: #943c3c;
     color: #000000;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+h1 {
+    background-color: aquamarine;
+    display: inline-block;
 }
 nav {
-    color: #ffffff;
+    background-color: hotpink;
+    float: right  
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    background-color: khaki;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+nav ul li a:hover, nav ul li a.currentpage {
+    background-color: lawngreen;
+    text-decoration: none;
+}
+.imgmain {
+    width: 100%;
+}
+main {
+    overflow: auto;
+    background-color: maroon;
+}
+footer {
+    background-color: lime;
 }
