@@ -1,41 +1,65 @@
-/* @import on first like (without style tags) */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
     background-color: #ffffff;
     color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     padding: 20px;
 }
 /* https://www.fontpair.co/all */
 /* Google fonts */
+header {
+    background-color: #943c3c;
+    color: #000000;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+main {
+    overflow: auto;
+    background-color: rgba(245, 245, 245, 0.897);
+}
+.wrapper {
+    width: 980px;
+    margin: 100px auto;
+}
+.imgmain {
+    width: 100%;
+}
+/* Type */
 h1, 
 h2, 
 h3,
 h4,
 h5, 
 h6 {
-    font-family: serif;
+    font-family: 'Bitter', serif;
     margin-bottom: 20px;
     font-weight: bold;
 }
 h1 {
-    padding: 30px;
+    font-size: 36px;
+    padding: 45px;
+    /* background-color: #00000015; */
+    background-color: #86382b;
+    display: inline-block;
 }
 h2 {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #00000060;
     padding-bottom: 3px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: center;
+    /* change h3 on bu_ to h4 and copy h2 ccs to h3 (except text-align, and text-transform (maybe)) */
 }
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
+/* Navs */
 a {
     color: goldenrod;
-    background-color: indigo;
     text-decoration: none;
 }
 a:hover {
@@ -45,47 +69,65 @@ a:visited {
     color: goldenrod;
 }
 a:active {
-    color: greenyellow;
-}
-.wrapper {
-    width: 980px;
-    margin: 100px auto;
-}
-header {
-    background-color: #943c3c;
-    color: #000000;
-    padding: 20px;
-    padding-bottom: 100px;
-}
-h1 {
-    background-color: aquamarine;
-    display: inline-block;
+    color: #943c3c;
 }
 nav {
-    background-color: hotpink;
-    float: right  
+    float: right;
 }
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-nav ul li a {
+nav ul li a,
+div.footernav ul li a,
+div.homefooternav ul li a {
     text-decoration: none;
-    background-color: khaki;
+    background-color: rgb(134, 56, 43);
     padding: 10px 20px;
     text-transform: uppercase;
 }
-nav ul li a:hover, nav ul li a.currentpage {
+nav.homepage ul li a {
+    display: block;
+    padding: 12.2px 20px;
+    /* 12.2px to make the same total height as h1, if h1 changes, change this */
+    width: 200px;
+}
+nav ul li a:hover,
+div.homefooternav ul li a:hover,
+div.footernav ul li a:hover, 
+a.currentpage { 
     background-color: lawngreen;
     text-decoration: none;
 }
-.imgmain {
-    width: 100%;
+.wrapper div.headernav ul li,
+.wrapper div.footernav ul li,
+div.homefooternav ul li {
+    display: inline;
 }
-main {
-    overflow: auto;
-    background-color: maroon;
+div.headernav {
+    float: right;
+}
+/* moved to h2 */
+/* .wrapper div h2 {
+    text-align: center;
+} */
+div.footernav {
+    padding-bottom: 80px;
+}
+div.homefooternav ul li a,
+div.footernav ul li a{
+    margin: 0px auto;
+}
+footer .wrapper {
+    margin: 0px auto;
 }
 footer {
-    background-color: lime;
+    background-color: #943c3c;
+    padding: 60px 10px 10px;
+}
+/* div.homefooternav ul,
+div.footernav ul {
+    background-color: crimson;
+} */
+/* main */
+img {
+    width: 50%;
+    margin: 0px auto 30px;
+    display: block;
 }
