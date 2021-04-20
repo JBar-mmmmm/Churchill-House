@@ -74,6 +74,12 @@ a:active {
 nav {
     float: right;
 }
+nav.homepage ul li a {
+    display: block;
+    padding: 12.2px 20px;
+    /* 12.2px to make the same total height as h1, if h1 changes, change this */
+    width: 200px;
+}
 nav ul li a,
 div.footernav ul li a,
 div.homefooternav ul li a {
@@ -82,16 +88,12 @@ div.homefooternav ul li a {
     padding: 10px 20px;
     text-transform: uppercase;
 }
-nav.homepage ul li a {
-    display: block;
-    padding: 12.2px 20px;
-    /* 12.2px to make the same total height as h1, if h1 changes, change this */
-    width: 200px;
-}
 nav ul li a:hover,
 div.homefooternav ul li a:hover,
 div.footernav ul li a:hover, 
-a.currentpage { 
+a.currentpage,
+/*for some reason a.currentpage wouldn't work in footer*/
+div.footernav ul li a.currentpage { 
     background-color: lawngreen;
     text-decoration: none;
 }
@@ -110,9 +112,21 @@ div.headernav {
 div.footernav {
     padding-bottom: 80px;
 }
-div.homefooternav ul li a,
-div.footernav ul li a{
-    margin: 0px auto;
+div.homefooternav {
+/*  centre https://stackoverflow.com/questions/4980525/css-center-display-inline-block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.footernav ul {
+/*  centre https://stackoverflow.com/questions/4980525/css-center-display-inline-block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  footer nav not padded for some reason */
+div.footernav ul li {
+    padding: 0px 2px;
 }
 footer .wrapper {
     margin: 0px auto;
@@ -130,4 +144,17 @@ img {
     width: 50%;
     margin: 0px auto 30px;
     display: block;
+}
+.listimg ul li img{
+    display: inline-block;
+    float: right;
+}
+/*
+.listimg ul li {
+    display: inline-block;
+    float: right;
+}
+*/
+ul li div {
+    padding-bottom: 10px;
 }
