@@ -7,24 +7,25 @@ body {
     font-size: 18px;
     padding: 20px;
 }
-/* https://www.fontpair.co/all */
-/* Google fonts */
 header {
     background-color: #943c3c;
     color: #000000;
     padding: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 main {
     overflow: auto;
     background-color: rgba(245, 245, 245, 0.897);
 }
+header img {
+    padding-top: 50px;
+    width: 15%;
+    float: left;
+    /* display: inline-block; */
+}
 .wrapper {
     width: 980px;
     margin: 100px auto;
-}
-.imgmain {
-    width: 100%;
 }
 /* Type */
 h1, 
@@ -50,14 +51,17 @@ h2 {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    /* change h3 on bu_ to h4 and copy h2 ccs to h3 (except text-align, and text-transform (maybe)) */
+    font-size: 24px;
+}
+h3 {
+    text-transform: none;
 }
 p {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
-/* Navs */
+/* a */
 a {
     color: goldenrod;
     text-decoration: none;
@@ -71,6 +75,7 @@ a:visited {
 a:active {
     color: #943c3c;
 }
+/* Navs */
 nav {
     float: right;
 }
@@ -82,17 +87,26 @@ div.homefooternav ul li a {
     padding: 10px 20px;
     text-transform: uppercase;
 }
-nav.homepage ul li a {
+nav ul li a {
     display: block;
     padding: 12.2px 20px;
-    /* 12.2px to make the same total height as h1, if h1 changes, change this */
+    /* 12.2px to match h1 height */
     width: 200px;
+}
+div.navcentre {
+    display: table;
+    margin: 0 auto;
+}
+div.navcentre ul li a{
+    display: table-cell;
+    width: 25%;  
 }
 nav ul li a:hover,
 div.homefooternav ul li a:hover,
 div.footernav ul li a:hover, 
 a.currentpage { 
-    background-color: lawngreen;
+    background-color: lawngreen !important;
+    /* I'm not sure why, but the footernav and homefooternav would get overridden by lines 82-89 without the !important */
     text-decoration: none;
 }
 .wrapper div.headernav ul li,
@@ -103,17 +117,13 @@ div.homefooternav ul li {
 div.headernav {
     float: right;
 }
-/* moved to h2 */
-/* .wrapper div h2 {
-    text-align: center;
-} */
 div.footernav {
     padding-bottom: 80px;
 }
-div.homefooternav ul li a,
-div.footernav ul li a{
-    margin: 0px auto;
+div.homefooternav {
+    margin-top: 30px;
 }
+/* Footer */
 footer .wrapper {
     margin: 0px auto;
 }
@@ -121,13 +131,59 @@ footer {
     background-color: #943c3c;
     padding: 60px 10px 10px;
 }
-/* div.homefooternav ul,
-div.footernav ul {
-    background-color: crimson;
-} */
-/* main */
+footer p {
+    text-align: center;
+}
+/* Content */
 img {
-    width: 50%;
-    margin: 0px auto 30px;
+    width: 80%;
+    margin: 40px auto 50px;
     display: block;
+}
+.imgmain {
+    width: 100%;
+}
+main ul {
+    padding-bottom: 40px;
+}
+main ul li {
+    padding-top: 10px;
+}
+h3.jump {
+    padding-top: 15px;
+    margin-bottom: 0px;
+}
+ul.jump {
+    padding-bottom: 100px;
+}
+div.sidebyside {
+    column-count: 2;
+}
+div.sidebyside img {
+    height: 600px;
+}  
+div.imglist ul li img {
+    width: 46%;
+    display: inline-block;
+    margin: 0px auto 30px;
+}
+div.imglist ul li p {
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    padding: 150px 0px 0px;
+    text-align: center;
+}
+img.firstmainimg {
+    width: 100%;
+    margin: 0px auto 30px;
+}
+div.gallery {
+    float: left;
+    width: 30%;
+    padding: 1%;
+}
+div.gallery img {
+    width: 100%;
+    margin: 0px;
 }

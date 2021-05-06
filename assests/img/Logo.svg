@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
+	<title>Shape 1</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #daa520 } 
+	</style>
+	<path id="Shape 1" fill-rule="evenodd" class="shp0" d="M18 36C8.05 36 0 27.95 0 18C0 8.05 8.05 0 18 0C19.02 0 20.02 0.08 21 0.25L21 6.38C20.04 6.13 19.04 6 18 6C11.36 6 6 11.36 6 18C6 24.64 11.36 30 18 30C19.04 30 20.04 29.87 21 29.62L21 35.75C20.02 35.92 19.02 36 18 36ZM36 18C36 22.84 34.1 27.23 31 30.46L31 20L29 20L29 32.26C27.5 33.41 25.82 34.34 24 34.98L24 1.02C25.82 1.66 27.5 2.59 29 3.74L29 16L31 16L31 5.54C34.1 8.77 36 13.16 36 18Z" />
+</svg>
