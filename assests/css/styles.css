@@ -4,28 +4,33 @@ body {
     background-color: #ffffff;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    padding: 20px;
+    font-size: 1.2500rem;
+    padding: 1.25rem;
 }
+@media screen and (max-device-width: 500px) {
+    body {
+        font-size: calc(18px + 1rem);
+        padding: calc(18px + 1rem);
+    }
+}    
 header {
     background-color: #943c3c;
     color: #000000;
-    padding: 20px;
-    padding-bottom: 30px;
+    padding: 4rem 1.25rem 10rem;
 }
 main {
     overflow: auto;
     background-color: rgba(245, 245, 245, 0.897);
 }
 header img {
-    padding-top: 50px;
-    width: 15%;
+    width: 7.87500rem;
+    /* to be same as h1 */
     float: left;
-    /* display: inline-block; */
+    margin: 0 0 0 1rem;
 }
 .wrapper {
-    width: 980px;
-    margin: 100px auto;
+    width: 66%;
+    margin: 0 auto;
 }
 /* Type */
 h1, 
@@ -35,31 +40,57 @@ h4,
 h5, 
 h6 {
     font-family: 'Bitter', serif;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-weight: bold;
 }
+@media screen and (max-device-width: 1000px) {
+    h1, 
+    h2, 
+    h3,
+    h4,
+    h5, 
+    h6 {
+    margin-bottom: calc(19px + 0.5rem);
+    }
+}
 h1 {
-    font-size: 36px;
-    padding: 45px;
+    font-size: 2.25rem;
+    padding: 2.8125rem;
     /* background-color: #00000015; */
     background-color: #86382b;
     display: inline-block;
 }
+@media screen and (max-device-width: 1000px) {
+    h1 {
+    margin-bottom: calc(35px + 0.5rem);
+    }
+}
 h2 {
-    border-bottom: 1px solid #00000060;
-    padding-bottom: 3px;
-    letter-spacing: 1px;
+    border-bottom: 0.0625rem solid #00000060;
+    padding-bottom: 0.1875rem;
+    letter-spacing: 0.0625rem;
     text-transform: uppercase;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+@media screen and (max-device-width: 1000px) {
+    h2 {
+    margin-bottom: calc(23px + 0.5rem);
+    }
 }
 h3 {
     text-transform: none;
 }
 p {
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 20px;
+    font-size: 1.12500rem;
+    line-height: 1.37500rem;
+    margin-bottom: 1.25rem;
+}
+@media screen and (max-device-width: 1000px) {
+    p {
+        font-size: calc(15px + 0.5rem);
+        line-height: calc(15px + 1rem);
+    }
 }
 /* a */
 a {
@@ -79,19 +110,31 @@ a:active {
 nav {
     float: right;
 }
+@media screen and (max-device-width: 1200px) {
+    nav {
+        float: none;
+    }
+}
 nav ul li a,
 div.footernav ul li a,
 div.homefooternav ul li a {
     text-decoration: none;
     background-color: rgb(134, 56, 43);
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     text-transform: uppercase;
 }
 nav ul li a {
     display: block;
-    padding: 12.2px 20px;
-    /* 12.2px to match h1 height */
-    width: 200px;
+    padding: 0.7625rem 1.25rem;
+    /* 0.7625rem to match h1 height */
+    width: 12.5rem;
+}
+@media screen and (max-device-width: 1200px) {
+    nav ul li a {
+        padding: 0.7625rem 1.25rem;
+        /* 0.7625rem to match h1 height */
+        width: 12.5rem;
+    }
 }
 div.navcentre {
     display: table;
@@ -101,12 +144,18 @@ div.navcentre ul li a{
     display: table-cell;
     width: 25%;  
 }
+@media screen and (max-device-width: 500px) {
+    div.navcentre ul li a {
+        display: block;
+        width: 100%;
+    }
+}
 nav ul li a:hover,
 div.homefooternav ul li a:hover,
 div.footernav ul li a:hover, 
 a.currentpage { 
     background-color: lawngreen !important;
-    /* I'm not sure why, but the footernav and homefooternav would get overridden by lines 82-89 without the !important */
+    /* I'm not sure why, but the footernav and homefooternav would get overridden without the !important */
     text-decoration: none;
 }
 .wrapper div.headernav ul li,
@@ -118,18 +167,18 @@ div.headernav {
     float: right;
 }
 div.footernav {
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
 }
 div.homefooternav {
-    margin-top: 30px;
+    margin-top: 1.87500rem;
 }
 /* Footer */
 footer .wrapper {
-    margin: 0px auto;
+    margin: 0 auto;
 }
 footer {
     background-color: #943c3c;
-    padding: 60px 10px 10px;
+    padding: 3.75rem 0.625rem 0.625rem;
 }
 footer p {
     text-align: center;
@@ -137,53 +186,76 @@ footer p {
 /* Content */
 img {
     width: 80%;
-    margin: 40px auto 50px;
+    margin: 2.5rem auto 3.12500rem;
     display: block;
 }
 .imgmain {
     width: 100%;
+    margin: 0rem auto 3.12500rem;
 }
 main ul {
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
 }
 main ul li {
-    padding-top: 10px;
+    padding-top: 0.625rem;
+    font-size: 1.12500rem;
+    line-height: 1.37500rem;
 }
+@media screen and (max-device-width: 1000px) {
+    main ul li {
+        font-size: calc(15px + 0.5rem);
+        line-height: calc(15px + 1rem);
+    }
+} 
 h3.jump {
-    padding-top: 15px;
-    margin-bottom: 0px;
+    padding-top: 0.9375rem;
+    margin-bottom: 0;
 }
 ul.jump {
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
+}
+div.sidebysidebox {
+    width: calc(50% - 1rem);
+    margin: 0 auto;
 }
 div.sidebyside {
     column-count: 2;
+    margin-bottom: 3.12500rem;
+    padding: 0 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 div.sidebyside img {
-    height: 600px;
+    size: 37.5rem;
+    margin: 0;
+    padding: 1rem;
 }  
 div.imglist ul li img {
     width: 46%;
     display: inline-block;
-    margin: 0px auto 30px;
+    margin: 0 auto 1.87500rem;
 }
 div.imglist ul li p {
     display: inline-block;
     width: 46%;
     vertical-align: top;
-    padding: 150px 0px 0px;
+    padding: 9.37500rem 0 0;
     text-align: center;
 }
 img.firstmainimg {
     width: 100%;
-    margin: 0px auto 30px;
+    margin: 0 auto 1.87500;
 }
 div.gallery {
-    float: left;
-    width: 30%;
-    padding: 1%;
+    width: 107%;
+    margin: 0 auto;
 }
-div.gallery img {
-    width: 100%;
-    margin: 0px;
+div.gallery_items {
+    margin-bottom: 3.12500rem;
+    column-count: 3;
+    justify-content: center;
+}
+div.gallery_items img {
+    margin: 0.25rem 0;
 }
