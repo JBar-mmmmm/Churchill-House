@@ -276,3 +276,6 @@ p.copywrite {
 img.copywrite {
     margin: 2.5rem 0 0;
 }
+p.last {
+    margin-bottom: 8rem;
+}
