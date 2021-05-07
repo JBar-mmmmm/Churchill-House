@@ -248,9 +248,15 @@ div.imglist ul li p {
     div.imglist ul li p {
         float: none;
         margin: 0 auto 1.87500rem;
-        width: 46%;
+        width: 100%;
         padding: 3rem 0 0;
         text-align: center;
+    }
+}
+@media screen and (max-device-width: 1000px) {
+    div.imglist ul li p {
+        font-size: calc(15px + 0.5rem);
+        line-height: calc(15px + 1rem);
     }
 }
 img.firstmainimg {
